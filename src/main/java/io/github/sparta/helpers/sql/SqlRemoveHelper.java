@@ -28,6 +28,26 @@ public class SqlRemoveHelper {
     /** From正则表达式 */
     public static final String FROM_REGEX = "\\sfrom\\s";
 
+    /** sql contains whre regex. */
+    public static final String WHERE_REGEX          = "\\s+where\\s+";
+    /** sql contains <code>order by </code> regex. */
+    public static final String ORDER_REGEX          = "order\\s+by";
+    public static boolean containOrder(String sql) {
+        return containRegex(sql, ORDER_REGEX);
+    }
+
+    public static boolean containWhere(String sql) {
+        return containRegex(sql, WHERE_REGEX);
+    }
+
+
+
+    public static boolean containRegex(String sql, String regex) {
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(sql);
+        return matcher.find();
+    }
+
     private static int indexOfByRegex(String input, String regex) {
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(input);

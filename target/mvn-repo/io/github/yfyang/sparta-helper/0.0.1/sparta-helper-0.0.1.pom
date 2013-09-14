@@ -116,7 +116,7 @@
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
                     <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
                     <includes><include>**/*</include></includes>
-                    <repositoryName>sparta-helper</repositoryName>      <!-- github repo name -->
+                    <repositoryName>mybatis-pagination</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>yfyang</repositoryOwner>    <!-- github username  -->
                 </configuration>
                 <executions>
