@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+# Intellij Idea Files #
+*.idea
+*.iml
+*.ipr
+*.ids
