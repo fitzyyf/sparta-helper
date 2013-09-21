@@ -3,10 +3,10 @@
   <groupId>io.github.yfyang</groupId>
   <artifactId>sparta-helper</artifactId>
   <versioning>
-    <release>0.0.1</release>
+    <release>0.0.2</release>
     <versions>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
     </versions>
-    <lastUpdated>20130914140121</lastUpdated>
+    <lastUpdated>20130921051552</lastUpdated>
   </versioning>
 </metadata>
